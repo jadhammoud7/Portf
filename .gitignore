@@ -1,4 +1,4 @@
-package.json
-node_modules/*
-public/images/*
+.package.json
+.node_modules/*
+images/
 .env

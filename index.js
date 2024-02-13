@@ -8,7 +8,7 @@ dotenv.config();
 const port=3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-
+console.log("url: ",process.env.mongodb_connect)
 mongoose.connect(process.env.mongodb_connect, { useNewUrlParser: true });
 
 const messagesSchema=new mongoose.Schema({
