@@ -1,11 +1,14 @@
 import express from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
+import dotenv from 'dotenv';
 const app=express();
+dotenv.config();
 
 const port=3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
+
 mongoose.connect(process.env.mongodb_connect, { useNewUrlParser: true });
 
 const messagesSchema=new mongoose.Schema({
