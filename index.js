@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 // mongoose.connect("mongodb+srv://jadhammoud7:Jadhammoud007@cluster1.o3k4gdg.mongodb.net/portfolioDb", { useNewUrlParser: true });
 
-mongoose.connect("mongodb://localhost:27017/portfolioDb", { useNewUrlParser: true });
+mongoose.connect(process.env.mongodb_connect, { useNewUrlParser: true });
 
 const messagesSchema=new mongoose.Schema({
     name:String,
