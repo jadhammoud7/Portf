@@ -36,6 +36,6 @@ app.post("/submit",(req,res)=>{
         res.redirect("/");
     }
 })
-app.listen(port || 10000,()=>{
+app.listen(port,()=>{
     console.log("connected to port: ",port);
 })
