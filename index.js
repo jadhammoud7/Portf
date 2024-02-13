@@ -9,6 +9,7 @@ const port=3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
+
 mongoose.connect("mongodb+srv://jadhammoud7:"+process.env.id+"@cluster1.o3k4gdg.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true });
 
 const messagesSchema=new mongoose.Schema({
