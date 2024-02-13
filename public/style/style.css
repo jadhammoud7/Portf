@@ -392,6 +392,7 @@ a {
   width: 300px;
   height: 300px;
   perspective: 1000px;
+  border-radius: 10px;
 }
 
 .flip-card-inner {
@@ -401,6 +402,7 @@ a {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+  border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -415,6 +417,8 @@ a {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 10px;
+
 }
 
 .flip-card-front {
@@ -440,6 +444,13 @@ a {
   padding: 10px;
   color: white;
   border-radius: 10px;
+}
+.flip-card-back button a{
+  text-decoration: none;
+}
+.flip-card-back i{
+  color: black;
+  font-weight: bold;
 }
 .flip-card-front img {
   width: 300px;

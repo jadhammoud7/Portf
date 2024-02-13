@@ -29,7 +29,6 @@
     <title>My Resume</title>
   </head>
 
-
   <body>
     <div class="header">
       <div class="logo">
@@ -111,16 +110,29 @@
 
     <!--projects section-->
     <section id="projects">
-      <h1 class="section-title">My<span> Projects</span></h1>
+      <h1 class="section-title"><span>Projects</span> i worked on</h1>
       <div class="list-projects">
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/ana.jpeg" alt="Avatar" />
+              <img src="/images/Newbie Gamers-logos.jpeg" alt="Avatar" />
             </div>
             <div class="flip-card-back">
-              <button>Github link</button>
-              <button>Live Demo</button>
+              <i>Currently having problems in deploying it</i>
+              <p>To know more about my Capstone, kindly read the README file by clicking on the link below</p>
+              <button><a href="https://github.com/jadhammoud7/Capstone-Project">Github Link</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/gamecenter.jpg" alt="Avatar" />
+            </div>
+            <div class="flip-card-back">
+              <i>Currently having problems in deploying it</i>
+              <p>To know more about Game Center(Mobile app), kindly read the README file by clicking on the link below</p>
+              <button> <a href="https://github.com/jadhammoud7/game-center">Github link</a></button>
             </div>
           </div>
         </div>
@@ -138,33 +150,39 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/ana.jpeg" alt="Avatar" />
+              <img src="/images/jonahs.jpg" alt="Avatar" />
             </div>
             <div class="flip-card-back">
-              <button>Github link</button>
-              <button>Live Demo</button>
+              <p>
+                Jonahs kabob is a random restaurant being made but not yet deployed, to the famous USA tiktoker
+                nick antonyan, who owns this restaurant along with his family members
+              </p>
+              <button>
+                <a href="https://main--gleeful-buttercream-f83893.netlify.com"
+                  >Live Demo</a
+                >
+              </button>
             </div>
           </div>
         </div>
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/ana.jpeg" alt="Avatar" />
+              <img src="/images/simonGame.jpg" alt="Avatar" />
             </div>
             <div class="flip-card-back">
-              <button>Github link</button>
-              <button>Live Demo</button>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="/images/ana.jpeg" alt="Avatar" />
-            </div>
-            <div class="flip-card-back">
-              <button>Github link</button>
-              <button>Live Demo</button>
+              <p>
+                The Simon game, is a classic electronic memory
+                game where players replicate a randomly generated sequence of
+                colored button presses. The game becomes progressively
+                challenging as successful sequences are reproduced, testing
+                players' memory and concentration
+              </p>
+              <button>
+                <a href="https://jadhammoud7.github.io/Simon-challenge/"
+                  >Live Demo</a
+                >
+              </button>
             </div>
           </div>
         </div>
@@ -176,7 +194,8 @@
       <div class="contact">
         <h1 class="section-title">Contact me</h1>
         <p>
-          Feel free to reach out for further discussion; I'm just a call or email away.
+          Feel free to reach out for further discussion; I'm just a call or
+          email away.
         </p>
       </div>
       <div class="container">
@@ -215,7 +234,9 @@
             <a href="www.linkedin.com/in/jad-hammoud-a8859b231"
               ><i class="fab fa-linkedin" style="--i: 20"></i>
             </a>
-            <a href="https://github.com/jadhammoud7"><i class="fab fa-github" style="--i: 20"></i> </a>
+            <a href="https://github.com/jadhammoud7"
+              ><i class="fab fa-github" style="--i: 20"></i>
+            </a>
           </div>
         </div>
 
@@ -251,14 +272,14 @@
 
     <script src="/javascript/main.js"></script>
     <script src="/javascript/skills.js"></script>
-    <script >
-      const submitForm=document.querySelector("#submitForm");
-      submitForm.addEventListener("click",()=>{
-        submitForm.innerHTML="Submitting";
-        setTimeout(function() {
-          submitForm.innerHTML= "Submit";
-          }, 2000);
-    });
+    <script>
+      const submitForm = document.querySelector("#submitForm");
+      submitForm.addEventListener("click", () => {
+        submitForm.innerHTML = "Submitting";
+        setTimeout(function () {
+          submitForm.innerHTML = "Submit";
+        }, 2000);
+      });
     </script>
   </body>
 </html>
