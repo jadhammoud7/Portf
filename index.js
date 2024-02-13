@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 const app=express();
 dotenv.config();
 
-const port=process.env.port || 10000;
+const port=3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
@@ -36,6 +36,6 @@ app.post("/submit",(req,res)=>{
         res.redirect("/");
     }
 })
-app.listen(port,()=>{
+app.listen(port || 10000,()=>{
     console.log("connected to port: ",port);
 })
