@@ -13,6 +13,7 @@ a {
 .section-title {
   text-align: center;
   font-weight: bolder;
+  margin-bottom: 100px;
 }
 .btn {
   background-color: blue;
@@ -358,7 +359,7 @@ a {
 }
 @media screen and (max-width: 355px) {
   .intro img {
-    margin-left: 30px;
+    margin-left: 0px;
   }
 }
 @media screen and (max-width: 1119px) {
@@ -419,6 +420,16 @@ a {
   backface-visibility: hidden;
   border-radius: 10px;
 
+}
+.flip-card-back i{
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+}
+.flip-card-back p{
+  color: white;
+  font-size: 15px;
+  padding: 10px;
 }
 
 .flip-card-front {
@@ -488,6 +499,12 @@ a {
     width: 250px;
     height: 250px;
   }
+  .flip-card-back i{
+    font-size: 15px;
+  }
+  .flip-card-back p{
+    font-size:12px;
+  }
 }
 @media screen and (max-width: 658px) {
   .list-projects {
@@ -501,6 +518,15 @@ a {
   .flip-card {
     width: 200px;
     height: 200px;
+  }
+  .flip-card-back i{
+    font-size: 10px;
+  }
+  .flip-card-back p{
+    font-size: 8px;
+  }
+  .flip-card-back button{
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -518,6 +544,15 @@ a {
     width: 300px;
     height: 300px;
   }
+  .flip-card-back i{
+    font-size: unset;
+  }
+  .flip-card-back p{
+    font-size:unset;
+  }
+  .flip-card-back button{
+    font-size: unset;
+  }
 }
 @media screen and (max-width: 400px) {
   .list-projects {
@@ -533,6 +568,10 @@ a {
   .flip-card {
     width: 250px;
     height: 250px;
+  }
+  .flip-card-back button{
+    font-size: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -550,6 +589,15 @@ a {
   .flip-card {
     width: 200px;
     height: 200px;
+  }
+  .flip-card-back i{
+    font-size: 10px;
+  }
+  .flip-card-back p{
+    font-size:8px;
+  }
+  .flip-card-back button{
+    font-size: 10px;
   }
 }
 
