@@ -719,6 +719,7 @@ a {
 @media screen and (max-width:340px) {
   .contact-me p{
     font-size: 10px;
+    margin:0px 10px
   }
 }
 .contactme-form {
